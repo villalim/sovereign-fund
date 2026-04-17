@@ -1,0 +1,37 @@
+# Criar arquivo .gitignore para evitar enviar arquivos desnecessários
+@"
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+*.egg-info/
+dist/
+build/
+
+# MQL5
+*.ex5
+*.ex4
+*.fxh
+*.compiled
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db-journal
+
+# Logs
+*.log
+"@ | Out-File ".gitignore" -Encoding UTF8
